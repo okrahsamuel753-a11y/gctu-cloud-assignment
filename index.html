@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCTU Cloud Website Deployment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        nav {
+            background-color: #002147;
+            color: #fff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #003366, #0055a5);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .status-badge {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            padding: 25px 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .card h2 {
+            color: #002147;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f0f2f5;
+            padding-bottom: 8px;
+        }
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .detail-item {
+            background: #f8f9fa;
+            padding: 12px 15px;
+            border-left: 4px solid #0055a5;
+            border-radius: 4px;
+        }
+        .steps-list {
+            padding-left: 20px;
+        }
+        .steps-list li {
+            margin-bottom: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #002147;
+            color: #ccc;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">GCTU CLOUD PROJECT</div>
+        <ul>
+            <li><a href="#student">Student Info</a></li>
+            <li><a href="#architecture">Deployment Architecture</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Cloud Computing Practical Assignment</h1>
+        <p>Ghana Communication Technology University (GCTU)</p>
+        <div class="status-badge">🔒 SSL / HTTPS Active & Verified</div>
+    </div>
+
+    <div class="container">
+        <div class="card" id="student">
+            <h2>Student Details</h2>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <strong>Full Name:</strong><br>
+                    Okrah Samuel
+                </div>
+                <div class="detail-item">
+                    <strong>Index Number:</strong><br>
+                    [Type Your Index Number Here]
+                </div>
+                <div class="detail-item">
+                    <strong>Institution:</strong><br>
+                    Ghana Communication Technology University
+                </div>
+                <div class="detail-item">
+                    <strong>Assignment:</strong><br>
+                    Assignment 4: Cloud Website Deployment
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="architecture">
+            <h2>Deployment Architecture Summary</h2>
+            <ul class="steps-list">
+                <li><strong>Development Environment:</strong> Built on Ubuntu Linux using HTML5 and CSS3.</li>
+                <li><strong>Version Control:</strong> Source code managed and hosted via GitHub.</li>
+                <li><strong>Cloud Hosting Platform:</strong> Deployed to Microsoft Azure Cloud Services.</li>
+                <li><strong>Domain & DNS:</strong> Configured with custom domain routing and DNS records.</li>
+                <li><strong>Security (SSL/TLS):</strong> Protected with an active SSL certificate enforcing HTTPS.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Okrah Samuel | GCTU Cloud Computing Assignment
+    </footer>
+
+</body>
+</html>
